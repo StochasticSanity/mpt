@@ -14,8 +14,8 @@ This repository contains a collection of utility scripts, setup scripts, configu
 
 To use any of the scripts or files in this repository, simply clone the repository and navigate to the desired subdirectory. Follow the instructions provided in the README files of each subdirectory to execute the scripts or use the configuration files.
 
-git clone https://github.com/yourusername/multi-purpose-toolkit.git
-cd multi-purpose-toolkit
+git clone https://github.com/yourusername/multi-purpose-scripts.git
+cd multi-purpose-scripts
 
 ## Contributing
 
