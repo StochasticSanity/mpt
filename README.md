@@ -4,10 +4,11 @@ This repository contains a collection of utility scripts, setup scripts, configu
 
 ## Contents
 
-- **Utility Scripts**: Scripts to perform various utility tasks, such as file renaming, system cleanup, and more.
+- **Utility Scripts**: Scripts to perform various utility tasks.
 - **Setup Scripts**: Scripts for setting up new environments, installing software, or configuring systems.
 - **Configuration Files**: Configuration files for various applications and tools that I've kept over the years.
-- **Miscellaneous Single-File Programs**: Standalone programs that serve specific purposes or address particular needs.
+- **Miscellaneous Single-File Programs**: Standalone scripts that serve specific purposes or address particular needs.
+- **RedTeam**: Various scripts I've made for red team engagements/penetration tests. 
 
 ## Getting Started
 
