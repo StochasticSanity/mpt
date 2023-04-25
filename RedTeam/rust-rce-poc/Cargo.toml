@@ -1,0 +1,12 @@
+[package]
+name = "rce-poc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+attohttpc = "0.25.0"
+hostname = "0.3.1"
+
+[[bin]]
+name = "rce-poc"
+path = "main.rs"

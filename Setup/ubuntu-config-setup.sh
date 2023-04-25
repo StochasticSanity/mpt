@@ -1,4 +1,13 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+# user-setup.sh
+# Bash script to set up new cloud machine with my prefered configuration.
+# Author: Joseph Erdosy
+#
+# This script updates the OS, configures BASH-IT and Oh-my-ZSH, then starship terminal
+# and tmux, enabling these for local users and root.
+#
+# Usage: ./ubuntu-config-setup.sh
 
 # Update the Ubuntu OS
 echo "Updating Ubuntu OS..."
