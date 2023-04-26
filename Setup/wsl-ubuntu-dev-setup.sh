@@ -14,12 +14,12 @@ sudo apt install build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-de
 
 # Install Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source $HOME/.cargo/env
+source "$HOME"/.cargo/env
 
 # Install the latest version of Go
 GO_LATEST=$(curl -s https://golang.org/dl/ | grep -oP 'go([0-9]+\.[0-9]+(\.[0-9]+)?).linux-amd64.tar.gz' | head -n 1)
 wget https://golang.org/dl/$GO_LATEST
-sudo tar -C /usr/local -xzf $GO_LATEST
+sudo tar -C /usr/local -xzf "$GO_LATEST"
 echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
 source ~/.bashrc
 
@@ -30,14 +30,14 @@ echo 'eval "$(pyenv init --path)"' >> ~/.bashrc
 echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
 source ~/.bashrc
 PYTHON_LATEST=$(pyenv install -l | grep -oP '^\s+3\.[0-9]+\.[0-9]+$' | tail -1)
-pyenv install $PYTHON_LATEST
-pyenv global $PYTHON_LATEST
+pyenv install "$PYTHON_LATEST"
+pyenv global "$PYTHON_LATEST"
 
 # Install Ruby
 curl -sSL https://get.rvm.io | bash -s stable --ruby
 source ~/.rvm/scripts/rvm
 RUBY_LATEST=$(rvm list known | grep -oP '^\[ruby\]-3\.[0-9]+\.[0-9]+$' | tail -1 | tr -d '[]')
-rvm install $RUBY_LATEST
+rvm install "$RUBY_LATEST"
 
 # Install the latest version of Node.js and npm
 curl -fsSL https://install-node.now.sh/lts | sudo bash
